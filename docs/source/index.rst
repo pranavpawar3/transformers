@@ -38,6 +38,16 @@ Choose the right framework for every part of a model's lifetime:
 Contents
 ---------------------------------
 
+The documentation is organized in five parts:
+
+- **GET STARTED** contains a quick tour, the installation instructions and some useful information about our philosophy
+  and a glossary.
+- **USING 🤗 TRANSFORMERS** contains general tutorials on how to use the library.
+- **ADVANCED GUIDES** contains more advanced guides that are more specific to a given script or part of the library.
+- **RESEARCH** focuses on tutorials that have less to do with how to use the library but more about general resarch in
+  transformers model
+- **PACKAGE REFERENCE** contains the documentation of each public class and function.
+
 The library currently contains PyTorch and Tensorflow implementations, pre-trained model weights, usage scripts and
 conversion utilities for the following models:
 
@@ -111,25 +121,31 @@ conversion utilities for the following models:
     trained using `OPUS <http://opus.nlpl.eu/>`_ pretrained_models data by Jörg Tiedemann.
 21. `Longformer <https://github.com/allenai/longformer>`_ (from AllenAI) released with the paper `Longformer: The
     Long-Document Transformer <https://arxiv.org/abs/2004.05150>`_ by Iz Beltagy, Matthew E. Peters, and Arman Cohan.
-22. `Other community models <https://huggingface.co/models>`_, contributed by the `community
+22. `DPR <https://github.com/facebookresearch/DPR>`_ (from Facebook) released with the paper `Dense Passage Retrieval
+    for Open-Domain Question Answering <https://arxiv.org/abs/2004.04906>`_ by Vladimir Karpukhin, Barlas Oğuz, Sewon
+    Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih.
+23. `Other community models <https://huggingface.co/models>`_, contributed by the `community
     <https://huggingface.co/users>`_.
 
 .. toctree::
     :maxdepth: 2
     :caption: Get started
 
+    quicktour
     installation
-    quickstart
+    philosophy
     glossary
 
 .. toctree::
     :maxdepth: 2
-    :caption: Using Transformers
+    :caption: Using 🤗 Transformers
 
-    usage
-    summary
-    serialization
+    task_summary
+    model_summary
+    preprocessing
+    training
     model_sharing
+    tokenizer_summary
     multilingual
 
 .. toctree::
@@ -149,6 +165,7 @@ conversion utilities for the following models:
     :caption: Research
 
     bertology
+    perplexity
     benchmarks
 
 .. toctree::
@@ -161,6 +178,7 @@ conversion utilities for the following models:
     main_classes/pipelines
     main_classes/optimizer_schedules
     main_classes/processors
+    main_classes/trainer
     model_doc/auto
     model_doc/encoderdecoder
     model_doc/bert
@@ -184,3 +202,5 @@ conversion utilities for the following models:
     model_doc/marian
     model_doc/longformer
     model_doc/retribert
+    model_doc/mobilebert
+    model_doc/dpr
